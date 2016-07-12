@@ -9,6 +9,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.t_robop.spinnert.MainActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOK"
+        android:layout_gravity="bottom"
+        android:text="決定"
+        android:onClick="OKbutton" />
+
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -9,16 +9,16 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
     Spinner mSpinner1;
-    Spinner Sphokkai;//北海道
-    Spinner Sptohoku;//東北
-    Spinner Spkanto;//関東
-    Spinner Spchubu;//中部
-    Spinner Spkansai;//関西
-    Spinner Spchugoku;//中国
-    Spinner Spshikoku;//四国
-    Spinner Spkyuushu;//九州
+    Spinner Sphokkai;//北海道0
+    Spinner Sptohoku;//東北1
+    Spinner Spkanto;//関東2
+    Spinner Spchubu;//中部3
+    Spinner Spkansai;//関西4
+    Spinner Spchugoku;//中国5
+    Spinner Spshikoku;//四国6
+    Spinner Spkyuushu;//九州7
 
-
+    int spHantei=0;//地方判定
     String selected;
 
     @Override
@@ -59,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
 
                 selected = (String) mSpinner1.getSelectedItem();
                 if (selected.equals("北海道")) {
+
+                    spHantei=0;
+
                     Sptohoku.setVisibility(View.GONE);  //非表示
                     Spkanto.setVisibility(View.GONE);  //非表示
                     Spchubu.setVisibility(View.GONE);  //非表示
@@ -72,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
 
                 } else if(selected.equals("東北")){
                     Log.d("test", "test");
+                    spHantei=1;
+
                     Sphokkai.setVisibility(View.GONE);  //非表示
                     Spkanto.setVisibility(View.GONE);  //非表示
                     Spchubu.setVisibility(View.GONE);  //非表示
@@ -83,6 +88,9 @@ public class MainActivity extends AppCompatActivity {
                     Sptohoku.setVisibility(View.VISIBLE);   //東北表示
 
                 }else if(selected.equals("関東")){
+
+                    spHantei=2;
+
                     Sphokkai.setVisibility(View.GONE);  //非表示
                     Sptohoku.setVisibility(View.GONE);  //非表示
                     Spchubu.setVisibility(View.GONE);  //非表示
@@ -94,6 +102,9 @@ public class MainActivity extends AppCompatActivity {
                     Spkanto.setVisibility(View.VISIBLE);  //関東表示
 
                 }else if(selected.equals("中部")){
+
+                    spHantei=3;
+
                     Sphokkai.setVisibility(View.GONE);  //非表示
                     Sptohoku.setVisibility(View.GONE);  //非表示
                     Spkanto.setVisibility(View.GONE);  //非表示
@@ -105,6 +116,9 @@ public class MainActivity extends AppCompatActivity {
                     Spchubu.setVisibility(View.VISIBLE);  //中部表示
 
                 }else if(selected.equals("関西")){
+
+                    spHantei=4;
+
                     Sphokkai.setVisibility(View.GONE);  //非表示
                     Sptohoku.setVisibility(View.GONE);  //非表示
                     Spkanto.setVisibility(View.GONE);  //非表示
@@ -116,6 +130,9 @@ public class MainActivity extends AppCompatActivity {
                     Spkansai.setVisibility(View.VISIBLE);  //関西表示
 
                 }else if(selected.equals("中国")){
+
+                    spHantei=5;
+
                     Sphokkai.setVisibility(View.GONE);  //非表示
                     Sptohoku.setVisibility(View.GONE);  //非表示
                     Spkanto.setVisibility(View.GONE);  //非表示
@@ -127,6 +144,9 @@ public class MainActivity extends AppCompatActivity {
                     Spchugoku.setVisibility(View.VISIBLE);  //中国表示
 
                 }else if(selected.equals("四国")){
+
+                    spHantei=6;
+
                     Sphokkai.setVisibility(View.GONE);  //非表示
                     Sptohoku.setVisibility(View.GONE);  //非表示
                     Spkanto.setVisibility(View.GONE);  //非表示
@@ -138,6 +158,9 @@ public class MainActivity extends AppCompatActivity {
                     Spshikoku.setVisibility(View.VISIBLE);  //四国表示
 
                 }else if(selected.equals("九州")){
+
+                    spHantei=7;
+
                     Sphokkai.setVisibility(View.GONE);  //非表示
                     Sptohoku.setVisibility(View.GONE);  //非表示
                     Spkanto.setVisibility(View.GONE);  //非表示
@@ -158,6 +181,29 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+    }
+
+    public void OKbutton(View v){
+
+        switch (spHantei){
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+        }
+
     }
 }
 
