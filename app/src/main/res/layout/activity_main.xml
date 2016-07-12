@@ -15,7 +15,8 @@
         android:id="@+id/spinner"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:entries="@array/items"/>
+        android:entries="@array/items"
+        android:spinnerMode="dialog" />
 
     <Spinner
         android:layout_width="wrap_content"
@@ -23,7 +24,8 @@
         android:id="@+id/spinner2"
         android:layout_below="@+id/spinner"
         android:layout_centerHorizontal="true"
-        android:entries="@array/hokkaido"/>
+        android:entries="@array/hokkaido"
+        android:spinnerMode="dialog"/>
 
     <Spinner
         android:layout_width="wrap_content"
@@ -31,6 +33,54 @@
         android:id="@+id/spinner3"
         android:layout_below="@+id/spinner2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:entries="@array/tohoku"/>
+        android:entries="@array/tohoku"
+        android:spinnerMode="dialog"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner4"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/kanto"
+        android:spinnerMode="dialog"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner5"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/chubu"
+        android:spinnerMode="dialog"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner6"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/kansai"
+        android:spinnerMode="dialog"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner7"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/chugoku"
+        android:spinnerMode="dialog"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner8"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/shikoku"
+        android:spinnerMode="dialog"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner9"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/kyuushu"
+        android:spinnerMode="dialog"/>
 </LinearLayout>
