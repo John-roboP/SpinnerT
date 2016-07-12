@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="items">
+
+        <item>北海道</item>
+        <item>東北</item>
+        <item>関東</item>
+        <item>中部</item>
+        <item>関西</item>
+        <item>四国</item>
+        <item>九州</item>
+        <item>沖縄</item>
+        <item>TEST</item>
+    </string-array>
+    <string-array name="hokkaido">
+
+        <item>札幌</item>
+        <item>函館</item>
+        <item>釧路</item>
+
+    </string-array>
+    <string-array name="tohoku">
+
+        <item>青森</item>
+        <item>岩手</item>
+        <item>宮城</item>
+        <item>山形</item>
+        <item>福島</item>
+
+    </string-array>
+
+
+</resources>
